@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Adbloker",
+    "version": "1.0",
+    "description": "uwu",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
